@@ -1,0 +1,56 @@
+/* index.css - Enhanced Medical Forum Styles */
+:root {
+  /* Color Palette */
+  --primary: #2563eb;
+  --primary-light: #93c5fd;
+  --primary-dark: #1e40af;
+  --secondary: #4f46e5;
+  --accent: #10b981;
+  --danger: #dc2626;
+  --warning: #f59e0b;
+  --info: #3b82f6;
+  --light: #f8fafc;
+  --dark: #1e293b;
+  --gray: #e2e8f0;
+  --gray-dark: #94a3b8;
+  --white: #ffffff;
+
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-size: 16px;
+  --font-color: #1e293b;
+  --font-weight: 400;
+  --font-style: normal;
+  
+  /* Category Colors */
+  --cardiology: #ef4444;
+  --oncology: #8b5cf6;
+  --neurology: #3b82f6;
+  --psychiatry: #6366f1;
+  --surgery: #10b981;
+  --pediatrics: #ec4899;
+  --radiology: #64748b;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+  
+  /* Transitions */
+  --transition-fast: 0.15s ease-in-out;
+  --transition-normal: 0.3s ease-in-out;
+  --transition-slow: 0.5s ease-in-out;
+  --dark: #1e293b; /* Should be present */
+  --light: #f8fafc;
+
+  /* Medical Theme Variables */
+  --medical-blue: #1a4b8c;
+  --medical-teal: #0d9488;
+  --medical-light: #f0f9ff;
+  --medical-white: #ffffff;
+  --medical-gray: #6b7280;
+  --medical-dark: #1f2937;
+  --medical-red: #dc2626;
+  --medical-green: #10b981;
+
+}

@@ -1,0 +1,202 @@
+/* Card Styles */
+.card {
+  background: var(--white);
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-5px);
+}
+
+.card-header {
+  padding: 1.25rem;
+  border-bottom: 1px solid var(--gray);
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-footer {
+  padding: 1.25rem;
+  border-top: 1px solid var(--gray);
+}
+
+/* Modern Card Styles */
+.modern-card {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+.modern-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+}
+
+.modern-card-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  background: linear-gradient(to right, var(--primary-light), rgba(255,255,255,0.9));
+}
+
+.modern-card-body {
+  padding: 1.5rem;
+}
+
+/* Post Card Styles */
+.post-card {
+  background: var(--white);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-fast);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--gray);
+}
+
+.post-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--dark);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.post-title:hover {
+  color: var(--primary);
+}
+
+.post-content {
+  padding: 1.5rem;
+}
+
+.post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: var(--gray-dark);
+}
+
+.post-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+/* Medical Card */
+.medical-card {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-left: 4px solid #0d9488;
+}
+
+.medical-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Badges */
+[class^="badge-"] {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  margin: 0.125rem;
+}
+
+.badge-general {
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
+
+/* Enhanced Badge Colors */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.85rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+}
+
+.badge:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Medical Specialty Badges */
+.badge-cardiology { background: linear-gradient(135deg, #ff6b6b, #ff8787); color: white; }
+.badge-dermatology { background: linear-gradient(135deg, #f06595, #f783ac); color: white; }
+.badge-endocrinology { background: linear-gradient(135deg, #fcc419, #ffd43b); color: #2b2d2f; }
+.badge-gastroenterology { background: linear-gradient(135deg, #40c057, #51cf66); color: white; }
+.badge-hematology { background: linear-gradient(135deg, #cc5de8, #d06be8); color: white; }
+.badge-infectious-disease { background: linear-gradient(135deg, #845ef7, #9775fa); color: white; }
+.badge-nephrology { background: linear-gradient(135deg, #22b8cf, #3bc9db); color: white; }
+.badge-neurology { background: linear-gradient(135deg, #339af0, #4dabf7); color: white; }
+.badge-obstetrics-gynecology { background: linear-gradient(135deg, #e64980, #f06595); color: white; }
+.badge-oncology { background: linear-gradient(135deg, #fa5252, #ff6b6b); color: white; }
+.badge-ophthalmology { background: linear-gradient(135deg, #20c997, #38d9a9); color: white; }
+.badge-orthopedics { background: linear-gradient(135deg, #fd7e14, #ffa94d); color: white; }
+.badge-otolaryngology { background: linear-gradient(135deg, #7950f2, #9775fa); color: white; }
+.badge-pediatrics { background: linear-gradient(135deg, #2f9e44, #37b24d); color: white; }
+.badge-psychiatry { background: linear-gradient(135deg, #5c7cfa, #748ffc); color: white; }
+.badge-pulmonology { background: linear-gradient(135deg, #15aabf, #22b8cf); color: white; }
+.badge-rheumatology { background: linear-gradient(135deg, #e67700, #f08c00); color: white; }
+.badge-surgery { background: linear-gradient(135deg, #12b886, #20c997); color: white; }
+.badge-urology { background: linear-gradient(135deg, #9c36b5, #ae3ec9); color: white; }
+.badge-emergency-medicine { background: linear-gradient(135deg, #f03e3e, #fa5252); color: white; }
+.badge-radiology { background: linear-gradient(135deg, #868e96, #adb5bd); color: white; }
+.badge-anesthesiology { background: linear-gradient(135deg, #495057, #868e96); color: white; }
+
+/* Post Type Badges */
+.badge-case-study { background: linear-gradient(135deg, #4dabf7, #74c0fc); color: white; }
+.badge-research { background: linear-gradient(135deg, #37b24d, #40c057); color: white; }
+.badge-question { background: linear-gradient(135deg, #ffd43b, #ffe066); color: #2b2d2f; }
+.badge-discussion { background: linear-gradient(135deg, #adb5bd, #ced4da); color: #2b2d2f; }
+.badge-peer-reviewed { 
+  background: linear-gradient(135deg, #20c997, #38d9a9); 
+  color: white;
+  box-shadow: 0 0 0 2px #20c997, 0 4px 6px rgba(0,0,0,0.1);
+  animation: pulse 2s infinite;
+}
+
+/* Urgency Badges */
+.badge-urgency-0 { background: linear-gradient(135deg, #f1f3f5, #e9ecef); color: #495057; }
+.badge-urgency-1 { background: linear-gradient(135deg, #d0ebff, #a5d8ff); color: #1864ab; }
+.badge-urgency-2 { background: linear-gradient(135deg, #fff3bf, #ffec99); color: #e67700; }
+.badge-urgency-3 { background: linear-gradient(135deg, #ffd8a8, #ffc078); color: #d9480f; }
+.badge-urgency-4 { background: linear-gradient(135deg, #ffc9c9, #ffa8a8); color: #c92a2a; }
+.badge-urgency-5 { 
+  background: linear-gradient(135deg, #ff8787, #ff6b6b); 
+  color: white;
+  animation: pulse 1.5s infinite;
+  box-shadow: 0 0 0 2px #ff6b6b;
+}

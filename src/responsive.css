@@ -1,0 +1,217 @@
+/* Responsive Design */
+/* Mobile (default) */
+.content-width {
+  max-width: 100%;
+}
+
+/* Small devices (576px and up) */
+@media (min-width: 576px) {
+  .footer-width-container {
+    max-width: 540px;
+  }
+}
+
+/* Tablets (768px and up) */
+@media (min-width: 768px) {
+  .content-width {
+    max-width: 720px;
+    padding: 0 0.5rem;
+  }
+  
+  .footer {
+    padding: 1.25rem 0;
+  }
+  
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer-width-container {
+    max-width: 720px;
+    padding: 0 1.5rem;
+  }
+}
+
+/* Laptops (992px and up) */
+@media (min-width: 992px) {
+  .content-width {
+    max-width: 960px;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .footer-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .footer-width-container {
+    max-width: 960px;
+  }
+}
+
+/* Desktops (1200px and up) */
+@media (min-width: 1200px) {
+  .content-width {
+    max-width: 1140px;
+  }
+  
+  .footer {
+    padding: 1.75rem 0;
+  }
+  
+  .footer-width-container {
+    max-width: 1140px;
+  }
+}
+
+/* Large desktops (1400px and up) */
+@media (min-width: 1400px) {
+  .content-width {
+    max-width: 1320px;
+  }
+  
+  .footer-width-container {
+    max-width: 1320px;
+  }
+}
+
+/* For wider layouts */
+@media (min-width: 1600px) {
+  .content-width {
+    max-width: 1400px;
+  }
+}
+
+/* For narrower content */
+@media (max-width: 768px) {
+  .content-width {
+    padding: 0 0.5rem;
+  }
+  
+  .post-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .post-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .navbar-menu {
+    gap: 1rem;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .editor-toolbar {
+    gap: 0.25rem;
+  }
+  
+  .attachments {
+    grid-template-columns: 1fr;
+  }
+  
+  .vote-section {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* Tablet portrait */
+@media (max-width: 1024px) and (orientation: portrait) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .flashcard-viewport {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile landscape */
+@media screen and (orientation: landscape) and (max-width: 768px) {
+  .post-form {
+    padding: 0.5rem;
+  }
+  
+  .editor-content {
+    min-height: 150px;
+  }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: more) {
+  .editor-toolbar button {
+    border: 2px solid currentColor;
+  }
+  
+  .form-control {
+    border-width: 2px;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .zoomable-image {
+    transition: none;
+  }
+  
+  .upvote-btn .upvote-icon {
+    animation: none;
+  }
+  
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* iOS Input Zoom Fix */
+@media (max-width: 480px) {
+  input[type="color"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="email"],
+  input[type="month"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="time"],
+  input[type="url"],
+  input[type="week"],
+  select:focus,
+  textarea {
+    font-size: 16px;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1a202c;
+    color: #f7fafc;
+  }
+  
+  .glass-panel {
+    background: rgba(26, 32, 44, 0.92);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .card {
+    background: #2d3748;
+    color: #f7fafc;
+  }
+}
